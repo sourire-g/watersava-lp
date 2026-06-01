@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>からだ想い｜リラクゼーション施設のための、水利用設備の衛生管理サービス</title>
+<meta name="description" content="お客様の口に入るものだからこそ、見えない部分まで衛生管理を。水利協推奨品「からだ想い CS100」が、リラクゼーション施設の信頼とブランド価値を支えます。無料衛生診断 受付中。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:        #0b1a2e;
+    --navy:       #14253f;
+    --navy-deep:  #0a1525;
+    --navy-soft:  #233a5c;
+    --silver:     #b7c0ce;
+    --silver-2:   #d8dde6;
+    --pearl:      #eef2f7;
+    --white:      #ffffff;
+    --bg:         #f7f9fc;
+    --bg-2:       #eef2f7;
+    --line:       #d8dde6;
+    --text:       #1c2434;
+    --muted:      #5b6a82;
+    --accent:     #94a8c4;
+    --water:      #5ea0c7;
+    --water-d:    #2b6c95;
+    --serif-jp:   'Noto Serif JP', serif;
+    --sans-jp:    'Noto Sans JP', sans-serif;
+    --display:    'Cinzel', 'Cormorant Garamond', serif;
+    --serif-en:   'Cormorant Garamond', serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans-jp);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.85;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 920px; margin: 0 auto; padding: 0 32px; }
+
+  /* ========== HEADER ========== */
+  .site-header {
+    position: fixed; inset: 0 0 auto 0;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    z-index: 100;
+  }
+  .site-header .container {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 16px; padding-bottom: 16px;
+  }
+  .brand {
+    font-family: var(--serif-jp);
+    color: var(--ink); font-size: 17px;
+    font-weight: 600; letter-spacing: 0.18em;
+  }
+  .brand small {
+    display: block; font-family: var(--display);
+    color: var(--water-d); font-size: 9px;
+    letter-spacing: 0.4em; margin-top: 4px; font-weight: 500;
+  }
+  .header-actions { display: flex; gap: 12px; align-items: center; }
+  .header-tel {
+    font-family: var(--serif-en);
+    color: var(--ink); font-size: 18px;
+    letter-spacing: 0.06em; font-weight: 600;
+  }
+  .header-tel small {
+    display: block; font-size: 10px;
+    color: var(--muted); letter-spacing: 0.15em;
+    font-family: var(--sans-jp); margin-bottom: 2px;
+  }
+  .header-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 22px;
+    background: var(--ink);
+    color: var(--white);
+    font-family: var(--serif-jp); font-size: 12px;
+    letter-spacing: 0.12em; font-weight: 500;
+    border-radius: 2px;
+    transition: all .3s ease;
+  }
+  .header-cta:hover { background: var(--water-d); transform: translateY(-1px); }
+
+  /* ========== HERO ========== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse at 20% 100%, rgba(94,160,199,0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 0%, rgba(20,37,63,0.15) 0%, transparent 50%),
+      linear-gradient(180deg, #fafcff 0%, #e6ecf5 100%);
+    display: flex; align-items: center;
+    padding: 140px 0 100px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(20,37,63,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(20,37,63,0.04) 1px, transparent 1px);
+    background-size: 90px 90px;
+    pointer-events: none;
+  }
+  /* water drop decoration */
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 520px; height: 520px;
+    background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.9), rgba(184,205,224,0.4) 40%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 2; width: 100%; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 14px;
+    color: var(--water-d);
+    font-family: var(--display);
+    letter-spacing: 0.4em; font-size: 12px; font-weight: 500;
+    margin-bottom: 32px;
+  }
+  .hero-eyebrow::before {
+    content: ''; width: 36px; height: 1px;
+    background: var(--water-d);
+  }
+  .hero h1 {
+    font-family: var(--serif-jp);
+    font-weight: 500;
+    font-size: clamp(28px, 4.6vw, 58px);
+    line-height: 1.45;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    margin-bottom: 36px;
+  }
+  .hero h1 .line { display: block; }
+  .hero h1 .em {
+    background: linear-gradient(transparent 64%, rgba(94,160,199,0.28) 64%);
+    padding: 0 4px;
+    color: var(--ink);
+  }
+  .hero h1 .accent {
+    color: var(--water-d); font-weight: 600;
+  }
+  .hero-lead {
+    font-family: var(--serif-jp);
+    font-size: clamp(15px, 1.3vw, 17px);
+    line-height: 2.15;
+    color: #2a3a55;
+    max-width: 680px;
+    font-weight: 300;
+    margin-bottom: 48px;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 16px;
+    padding: 14px 22px;
+    background: rgba(255,255,255,0.78);
+    border: 1px solid var(--silver);
+    backdrop-filter: blur(8px);
+    margin-bottom: 48px;
+  }
+  .hero-badge .seal {
+    width: 44px; height: 44px;
+    border: 1.5px solid var(--water-d);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--water-d);
+    font-family: var(--display);
+    font-size: 14px; font-weight: 600;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+  }
+  .hero-badge .badge-text {
+    display: flex; flex-direction: column;
+  }
+  .hero-badge .badge-text strong {
+    font-family: var(--serif-jp);
+    font-size: 14px; font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.06em;
+  }
+  .hero-badge .badge-text span {
+    font-family: var(--serif-jp);
+    font-size: 11px; color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+  .hero-cta-group {
+    display: flex; gap: 16px; flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 14px;
+    padding: 22px 40px;
+    font-family: var(--serif-jp);
+    font-size: 15px; font-weight: 500;
+    letter-spacing: 0.1em;
+    border: none; cursor: pointer;
+    transition: all .35s ease;
+    border-radius: 2px;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--water-d) 0%, var(--navy) 100%);
+    color: var(--white);
+    box-shadow: 0 16px 32px -10px rgba(43,108,149,0.4);
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 40px -10px rgba(43,108,149,0.55);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+  }
+  .btn-outline:hover {
+    background: var(--ink); color: var(--white);
+    transform: translateY(-2px);
+  }
+  .btn .arrow { font-family: var(--display); font-size: 18px; }
+  .scroll-hint {
+    position: absolute; bottom: 32px; left: 50%;
+    transform: translateX(-50%);
+    color: var(--water-d);
+    font-family: var(--display);
+    letter-spacing: 0.4em; font-size: 11px;
+    writing-mode: vertical-rl;
+  }
+  .scroll-hint::after {
+    content: '';
+    display: block;
+    width: 1px; height: 50px;
+    background: linear-gradient(180deg, var(--water-d), transparent);
+    margin: 14px auto 0;
+  }
+
+  /* ========== SECTION COMMON ========== */
+  section { padding: 120px 0; position: relative; }
+  .eyebrow {
+    text-align: center;
+    font-family: var(--display);
+    letter-spacing: 0.5em;
+    font-size: 12px; font-weight: 500;
+    color: var(--water-d);
+    margin-bottom: 18px;
+  }
+  .sec-title {
+    text-align: center;
+    font-family: var(--serif-jp);
+    font-weight: 500;
+    font-size: clamp(24px, 3.3vw, 40px);
+    line-height: 1.55;
+    color: var(--ink);
+    letter-spacing: 0.06em;
+    margin-bottom: 24px;
+  }
+  .sec-title .em {
+    background: linear-gradient(transparent 65%, rgba(94,160,199,0.25) 65%);
+    padding: 0 4px;
+  }
+  .sec-title .water { color: var(--water-d); }
+  .divider {
+    display: flex; align-items: center; justify-content: center;
+    gap: 14px; margin: 0 auto 64px;
+  }
+  .divider::before, .divider::after {
+    content: ''; width: 48px; height: 1px;
+    background: var(--water-d);
+  }
+  .divider .drop {
+    width: 8px; height: 12px;
+    background: var(--water-d);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transform: rotate(180deg);
+  }
+  .lead {
+    text-align: center;
+    font-family: var(--serif-jp);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2.1;
+    color: #2a3a55;
+    max-width: 760px;
+    margin: 0 auto 64px;
+  }
+
+  /* ========== SEC: 共感 (Blind Spots) ========== */
+  .blindspots {
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .blindspot-quote {
+    text-align: center;
+    font-family: var(--serif-jp);
+    font-size: clamp(20px, 2.4vw, 28px);
+    line-height: 2.1;
+    color: var(--ink);
+    margin: 0 auto 80px;
+    max-width: 760px;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+  }
+  .blindspot-quote .strike {
+    position: relative;
+    color: var(--muted);
+  }
+  .blindspot-quote .strike::after {
+    content: ''; position: absolute;
+    left: -4px; right: -4px;
+    top: 50%;
+    height: 1px;
+    background: var(--silver);
+  }
+  .care-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px; margin-bottom: 80px;
+  }
+  .care-item {
+    text-align: center;
+    padding: 32px 16px;
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    transition: transform .3s ease;
+  }
+  .care-item:hover { transform: translateY(-4px); }
+  .care-item .num {
+    font-family: var(--display);
+    color: var(--water-d);
+    font-size: 22px;
+    letter-spacing: 0.2em;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .care-item h4 {
+    font-family: var(--serif-jp);
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  .vs-arrow {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .vs-arrow::after {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 60px;
+    background: var(--silver);
+  }
+  .blindspot-question {
+    text-align: center;
+    font-family: var(--serif-jp);
+    font-size: clamp(22px, 2.8vw, 36px);
+    line-height: 1.9;
+    color: var(--ink);
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+  .blindspot-question .em {
+    color: var(--water-d);
+    border-bottom: 2px solid var(--water-d);
+    padding-bottom: 4px;
+  }
+  .blindspot-question .small {
+    display: block;
+    font-size: 60%;
+    font-weight: 300;
+    color: var(--muted);
+    margin-bottom: 16px;
+    letter-spacing: 0.15em;
+  }
+
+  /* ========== SEC: 業界の実態 ========== */
+  .reality {
+    background:
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  }
+  .reality-intro {
+    max-width: 820px; margin: 0 auto 64px;
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 16px; line-height: 2.15;
+    text-align: center; color: #2a3a55;
+  }
+  .reality-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .reality-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 48px 36px;
+    position: relative;
+  }
+  .reality-card::before {
+    content: '';
+    position: absolute; left: 0; top: 0;
+    width: 4px; height: 56px;
+    background: linear-gradient(180deg, var(--water-d), var(--silver));
+  }
+  .reality-card .label {
+    font-family: var(--display);
+    color: var(--water-d);
+    letter-spacing: 0.3em;
+    font-size: 11px; font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .reality-card h3 {
+    font-family: var(--serif-jp);
+    font-size: 20px; font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.06em;
+    margin-bottom: 18px;
+  }
+  .reality-card p {
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 14.5px; line-height: 2.1;
+    color: #3c4a63;
+  }
+  .reality-callout {
+    background: var(--ink);
+    color: var(--pearl);
+    padding: 56px 48px;
+    text-align: center;
+    border-radius: 2px;
+    max-width: 880px; margin: 0 auto;
+  }
+  .reality-callout .label {
+    font-family: var(--display);
+    color: var(--water);
+    letter-spacing: 0.4em;
+    font-size: 11px; margin-bottom: 18px;
+  }
+  .reality-callout p {
+    font-family: var(--serif-jp);
+    font-size: clamp(17px, 2vw, 22px);
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+  .reality-callout p .em {
+    color: var(--water);
+    border-bottom: 1px solid var(--water);
+    padding-bottom: 2px;
+  }
+
+  /* ========== SEC: なぜ衛生管理 ========== */
+  .why-hygiene {
+    background: var(--white);
+  }
+  .why-flow {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 880px; margin: 0 auto;
+    gap: 0;
+  }
+  .why-step {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: start;
+    gap: 36px;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .why-step:last-child { border-bottom: 0; }
+  .why-step .step-num {
+    font-family: var(--display);
+    color: var(--water-d);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+  .why-step .step-num small {
+    display: block;
+    font-family: var(--serif-jp);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.3em;
+    margin-top: 8px;
+  }
+  .why-step h4 {
+    font-family: var(--serif-jp);
+    color: var(--ink);
+    font-size: 20px; font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-bottom: 12px;
+  }
+  .why-step p {
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 15px; line-height: 2.1;
+    color: #3c4a63;
+  }
+  .why-summary {
+    margin-top: 64px;
+    padding: 48px;
+    background:
+      linear-gradient(135deg, rgba(94,160,199,0.08) 0%, rgba(20,37,63,0.04) 100%);
+    border-left: 3px solid var(--water-d);
+    max-width: 880px; margin-left: auto; margin-right: auto;
+  }
+  .why-summary p {
+    font-family: var(--serif-jp);
+    font-size: clamp(17px, 1.9vw, 21px);
+    line-height: 2;
+    color: var(--ink);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+
+  /* ========== SEC: からだ想いの特徴 ========== */
+  .feature {
+    background:
+      linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--navy-soft) 100%);
+    color: var(--pearl);
+    position: relative;
+    overflow: hidden;
+  }
+  .feature::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 15% 25%, rgba(94,160,199,0.15) 0%, transparent 45%),
+      radial-gradient(circle at 85% 75%, rgba(184,205,224,0.1) 0%, transparent 50%);
+  }
+  .feature .eyebrow { color: var(--water); }
+  .feature .sec-title { color: var(--pearl); }
+  .feature .sec-title .water { color: var(--water); }
+  .feature .lead { color: rgba(238,242,247,0.78); }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    position: relative; z-index: 2;
+  }
+  .feature-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(184,205,224,0.25);
+    backdrop-filter: blur(6px);
+    padding: 48px 40px;
+    transition: all .35s ease;
+  }
+  .feature-card:hover {
+    background: rgba(94,160,199,0.08);
+    border-color: var(--water);
+  }
+  .feature-card .icon {
+    width: 56px; height: 56px;
+    border: 1px solid var(--water);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--water);
+    font-family: var(--display);
+    font-size: 18px; font-weight: 600;
+    margin-bottom: 28px;
+    letter-spacing: 0.05em;
+  }
+  .feature-card h3 {
+    font-family: var(--serif-jp);
+    color: var(--white);
+    font-size: 22px; font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: 0.06em;
+  }
+  .feature-card .sub {
+    font-family: var(--display);
+    color: rgba(238,242,247,0.55);
+    font-size: 11px; letter-spacing: 0.3em;
+    margin-bottom: 22px;
+  }
+  .feature-card p {
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 14.5px; line-height: 2.1;
+    color: rgba(238,242,247,0.88);
+  }
+
+  /* ========== SEC: 水利協 ========== */
+  .authority {
+    background: var(--white);
+  }
+  .auth-hero {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto 64px;
+    padding: 56px 48px;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--white) 100%);
+    border: 1px solid var(--line);
+  }
+  .auth-seal {
+    width: 240px; height: 240px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px double var(--water-d);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background:
+      radial-gradient(circle at center, var(--white) 40%, rgba(238,242,247,0.6) 100%);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  .auth-seal::before {
+    content: '';
+    position: absolute; inset: 10px;
+    border: 1px solid var(--silver);
+    border-radius: 50%;
+  }
+  .auth-seal .top {
+    font-family: var(--serif-jp);
+    color: var(--water-d);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .auth-seal .main {
+    font-family: var(--serif-jp);
+    color: var(--ink);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+  }
+  .auth-seal .sub {
+    font-family: var(--display);
+    color: var(--water-d);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .auth-seal .org {
+    font-family: var(--serif-jp);
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+  .auth-text h3 {
+    font-family: var(--serif-jp);
+    color: var(--ink);
+    font-size: clamp(20px, 2.4vw, 28px);
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .auth-text h3 .em {
+    color: var(--water-d);
+    font-weight: 600;
+  }
+  .auth-text p {
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 15px; line-height: 2.1;
+    color: #3c4a63;
+  }
+  .eval-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    max-width: 980px; margin: 0 auto;
+  }
+  .eval-item {
+    text-align: center;
+    padding: 36px 12px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--water-d);
+  }
+  .eval-item .label {
+    font-family: var(--display);
+    font-size: 10px;
+    color: var(--water-d);
+    letter-spacing: 0.3em;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .eval-item h5 {
+    font-family: var(--serif-jp);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.1em;
+  }
+
+  /* ========== SEC: 導入メリット ========== */
+  .merits {
+    background:
+      linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+  }
+  .merits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px; margin: 0 auto;
+  }
+  .merit-card {
+    background: var(--white);
+    padding: 40px 32px;
+    border: 1px solid var(--line);
+    transition: all .35s ease;
+  }
+  .merit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 50px -20px rgba(11,26,46,0.12);
+    border-color: var(--water);
+  }
+  .merit-card .num {
+    font-family: var(--display);
+    color: var(--water-d);
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+  }
+  .merit-card h4 {
+    font-family: var(--serif-jp);
+    color: var(--ink);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+  }
+  .merit-card p {
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 14px; line-height: 1.95;
+    color: #3c4a63;
+  }
+
+  /* ========== SEC: 無料診断 (Mid CTA) ========== */
+  .diagnosis {
+    background: var(--white);
+    text-align: center;
+  }
+  .diag-box {
+    max-width: 960px; margin: 0 auto;
+    padding: 80px 48px;
+    background:
+      linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color: var(--pearl);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+  .diag-box::before {
+    content: '';
+    position: absolute;
+    top: -150px; right: -150px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(94,160,199,0.18) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .diag-box .label {
+    position: relative; z-index: 2;
+    display: inline-block;
+    padding: 6px 18px;
+    background: var(--water);
+    color: var(--white);
+    font-family: var(--serif-jp);
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.2em;
+    margin-bottom: 24px;
+  }
+  .diag-box h2 {
+    position: relative; z-index: 2;
+    font-family: var(--serif-jp);
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1.7;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    margin-bottom: 28px;
+  }
+  .diag-box h2 .water { color: var(--water); }
+  .diag-box .body {
+    position: relative; z-index: 2;
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 16px; line-height: 2.1;
+    color: rgba(238,242,247,0.88);
+    max-width: 680px; margin: 0 auto 36px;
+  }
+  .diag-checklist {
+    position: relative; z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 32px;
+    max-width: 640px;
+    margin: 0 auto 48px;
+    text-align: left;
+  }
+  .diag-checklist li {
+    list-style: none;
+    font-family: var(--serif-jp);
+    font-size: 14px;
+    color: rgba(238,242,247,0.95);
+    padding-left: 28px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+  }
+  .diag-checklist li::before {
+    content: '✓';
+    position: absolute; left: 0; top: 0;
+    color: var(--water);
+    font-weight: 700;
+  }
+  .diag-cta {
+    position: relative; z-index: 2;
+    display: inline-flex; align-items: center; gap: 14px;
+    padding: 22px 48px;
+    background: var(--white);
+    color: var(--ink);
+    font-family: var(--serif-jp);
+    font-size: 15px; font-weight: 600;
+    letter-spacing: 0.12em;
+    transition: all .35s ease;
+    border-radius: 2px;
+  }
+  .diag-cta:hover {
+    background: var(--water);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px -10px rgba(94,160,199,0.5);
+  }
+
+  /* ========== SEC: 導入事例 ========== */
+  .cases {
+    background: var(--bg);
+  }
+  .case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px; margin: 0 auto;
+  }
+  .case-card {
+    background: var(--white);
+    padding: 44px 36px;
+    border: 1px solid var(--line);
+    position: relative;
+  }
+  .case-card .mark {
+    font-family: var(--display);
+    color: var(--water);
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .case-card .voice {
+    font-family: var(--serif-jp);
+    font-size: 16px;
+    color: var(--ink);
+    line-height: 2;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    margin-bottom: 32px;
+    min-height: 96px;
+  }
+  .case-card .who {
+    border-top: 1px solid var(--line);
+    padding-top: 22px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .case-card .industry {
+    font-family: var(--display);
+    color: var(--water-d);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .case-card .name {
+    font-family: var(--serif-jp);
+    font-size: 14px; font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+  .case-card .position {
+    font-family: var(--serif-jp);
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+  }
+  .case-card .change {
+    margin-top: 20px;
+    padding: 16px 18px;
+    background: var(--bg);
+    font-family: var(--serif-jp);
+    font-size: 13px;
+    color: #3c4a63;
+    line-height: 1.8;
+    border-left: 2px solid var(--water);
+  }
+  .case-card .change strong {
+    color: var(--water-d);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  .case-note {
+    text-align: center;
+    margin-top: 36px;
+    font-family: var(--serif-jp);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* ========== SEC: FAQ ========== */
+  .faq {
+    background: var(--white);
+  }
+  .faq-list {
+    max-width: 900px; margin: 0 auto;
+  }
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--line);
+    margin-bottom: 14px;
+    transition: border-color .3s, box-shadow .3s;
+  }
+  .faq-item:hover {
+    border-color: var(--water);
+    box-shadow: 0 10px 30px -10px rgba(11,26,46,0.06);
+  }
+  .faq-q {
+    display: flex; align-items: flex-start; gap: 22px;
+    padding: 26px 32px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+  .faq-q .mark {
+    font-family: var(--display);
+    color: var(--water-d);
+    font-size: 22px; line-height: 1.2;
+    font-weight: 600;
+    flex-shrink: 0;
+    width: 28px;
+  }
+  .faq-q .text {
+    flex: 1;
+    font-family: var(--serif-jp);
+    font-size: 15.5px; font-weight: 500;
+    color: var(--ink);
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    padding-right: 36px;
+  }
+  .faq-q .toggle {
+    position: absolute; right: 28px; top: 50%;
+    transform: translateY(-50%);
+    width: 18px; height: 18px;
+  }
+  .faq-q .toggle::before,
+  .faq-q .toggle::after {
+    content: '';
+    position: absolute;
+    background: var(--water-d);
+    left: 50%; top: 50%;
+  }
+  .faq-q .toggle::before {
+    width: 14px; height: 1px;
+    transform: translate(-50%, -50%);
+  }
+  .faq-q .toggle::after {
+    width: 1px; height: 14px;
+    transform: translate(-50%, -50%);
+    transition: transform .3s ease;
+  }
+  .faq-item.is-open .faq-q .toggle::after {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+  }
+  .faq-item.is-open .faq-a { max-height: 600px; }
+  .faq-a-inner {
+    display: flex; gap: 22px;
+    padding: 4px 32px 28px;
+    border-top: 1px dashed var(--line);
+    padding-top: 22px;
+  }
+  .faq-a-inner .mark {
+    font-family: var(--display);
+    color: var(--silver);
+    font-size: 22px;
+    font-weight: 600;
+    width: 28px; flex-shrink: 0;
+  }
+  .faq-a-inner .text {
+    flex: 1;
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 14.5px; line-height: 2.1;
+    color: #3c4a63;
+  }
+
+  /* ========== FINAL CTA ========== */
+  .final-cta {
+    background:
+      linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-soft) 100%);
+    color: var(--pearl);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px; height: 900px;
+    background:
+      radial-gradient(circle, rgba(94,160,199,0.18) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .final-cta::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(184,205,224,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(184,205,224,0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+  .final-cta-inner { position: relative; z-index: 2; }
+  .final-eyebrow {
+    font-family: var(--display);
+    letter-spacing: 0.5em;
+    color: var(--water);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+  .final-title {
+    font-family: var(--serif-jp);
+    font-size: clamp(26px, 3.8vw, 46px);
+    line-height: 1.7;
+    color: var(--white);
+    letter-spacing: 0.06em;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  .final-title .water { color: var(--water); }
+  .final-body {
+    font-family: var(--serif-jp); font-weight: 300;
+    font-size: 16px;
+    line-height: 2.1;
+    color: rgba(238,242,247,0.85);
+    max-width: 700px;
+    margin: 0 auto 48px;
+  }
+  .final-buttons {
+    display: flex; gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+  }
+  .final-buttons .btn-primary {
+    background: var(--water);
+    color: var(--ink);
+    box-shadow: 0 20px 40px -10px rgba(94,160,199,0.4);
+  }
+  .final-buttons .btn-primary:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+  }
+  .final-buttons .btn-outline {
+    color: var(--pearl);
+    border-color: var(--silver);
+    background: transparent;
+  }
+  .final-buttons .btn-outline:hover {
+    background: var(--white);
+    color: var(--ink);
+    border-color: var(--white);
+  }
+  .final-tel-block {
+    padding-top: 40px;
+    border-top: 1px solid rgba(184,205,224,0.25);
+    display: inline-block;
+  }
+  .final-tel-block .lbl {
+    font-family: var(--display);
+    letter-spacing: 0.4em;
+    color: var(--water);
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .final-tel-block .num {
+    font-family: var(--serif-en);
+    color: var(--white);
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+  .final-tel-block .note {
+    font-family: var(--serif-jp);
+    font-size: 12px;
+    color: rgba(238,242,247,0.7);
+    margin-top: 8px;
+    letter-spacing: 0.08em;
+  }
+
+  /* ========== COMPANY ========== */
+  .company {
+    background: var(--white);
+    padding: 100px 0;
+  }
+  .company-grid { max-width: 880px; margin: 0 auto; }
+  .company-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+    gap: 32px;
+  }
+  .company-row:first-child { border-top: 1px solid var(--line); }
+  .company-row dt {
+    font-family: var(--serif-jp);
+    color: var(--water-d);
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    font-weight: 500;
+  }
+  .company-row dd {
+    font-family: var(--serif-jp);
+    font-weight: 300;
+    font-size: 14.5px;
+    color: var(--text);
+    line-height: 1.95;
+  }
+
+  /* ========== FOOTER ========== */
+  .footer {
+    background: var(--ink);
+    color: rgba(238,242,247,0.7);
+    padding: 56px 0 28px;
+    text-align: center;
+  }
+  .footer .brand {
+    color: var(--pearl);
+    font-family: var(--serif-jp);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    margin-bottom: 8px;
+  }
+  .footer .tag {
+    font-family: var(--display);
+    color: var(--water);
+    font-size: 10px;
+    letter-spacing: 0.4em;
+  }
+  .footer .copy {
+    margin-top: 32px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(184,205,224,0.12);
+    font-family: var(--display);
+    font-size: 11px;
+    letter-spacing: 0.3em;
+  }
+
+  /* ========== FLOATING CTA (mobile) ========== */
+  .floating-cta {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 99;
+    padding: 12px 16px;
+    background: rgba(11,26,46,0.95);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(184,205,224,0.2);
+  }
+  .floating-cta a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    background: var(--water);
+    color: var(--white);
+    font-family: var(--serif-jp);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 860px) {
+    section { padding: 72px 0; }
+    .container, .narrow { padding: 0 22px; }
+    .hero { padding: 130px 0 80px; min-height: auto; }
+    .site-header .container { padding: 12px 22px; }
+    .header-tel, .header-cta { display: none; }
+    .care-grid { grid-template-columns: repeat(2, 1fr); }
+    .reality-grid, .merits-grid, .case-grid,
+    .feature-grid, .eval-grid {
+      grid-template-columns: 1fr;
+    }
+    .eval-grid { grid-template-columns: repeat(2, 1fr); }
+    .auth-hero {
+      grid-template-columns: 1fr;
+      padding: 40px 24px;
+    }
+    .why-step {
+      grid-template-columns: 80px 1fr;
+      gap: 20px; padding: 28px 0;
+    }
+    .why-step .step-num { font-size: 36px; }
+    .reality-callout, .why-summary { padding: 36px 24px; }
+    .diag-box { padding: 56px 24px; }
+    .diag-checklist { grid-template-columns: 1fr; }
+    .reality-card, .feature-card, .merit-card, .case-card { padding: 36px 26px; }
+    .company-row {
+      grid-template-columns: 120px 1fr;
+      gap: 16px; padding: 16px 0;
+    }
+    .final-buttons { flex-direction: column; align-items: center; }
+    .btn, .diag-cta {
+      width: 100%; max-width: 360px;
+      justify-content: center;
+      padding: 18px 24px;
+    }
+    .floating-cta { display: block; }
+    body { padding-bottom: 80px; }
+    .hero-badge { padding: 12px 16px; gap: 12px; }
+    .hero-badge .seal { width: 38px; height: 38px; font-size: 12px; }
+    .case-card .voice { min-height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      からだ想い
+      <small>HYGIENE MANAGEMENT</small>
+    </div>
+    <div class="header-actions">
+      <div class="header-tel">
+        <small>受付 平日 9:00-18:00</small>
+        お気軽にお問い合わせください
+      </div>
+      <a href="#diagnosis" class="header-cta">無料衛生診断を申し込む</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-eyebrow">FOR RELAXATION FACILITIES</div>
+    <h1>
+      <span class="line">その<span class="accent">ウォーターサーバー</span>、</span>
+      <span class="line"><span class="em">本当に衛生管理されていますか？</span></span>
+    </h1>
+    <p class="hero-lead">
+      施術ベッド、タオル、空間、香り──。<br>
+      お客様への気配りに、一切の妥協はないはずです。<br>
+      では、その指先が運ぶ一杯の水は、どこまで管理されているでしょうか。<br>
+      <strong style="color:var(--ink);">「からだ想い」は、ウォーターサーバーではありません。リラクゼーション施設のための、水利用設備の衛生管理サービスです。</strong>
+    </p>
+    <div class="hero-badge">
+      <div class="seal">推奨</div>
+      <div class="badge-text">
+        <strong>水利協 推奨品 認定 ／ からだ想い CS100</strong>
+        <span>公益社団法人 全国水利用設備環境衛生協会</span>
+      </div>
+    </div>
+    <div class="hero-cta-group">
+      <a href="#diagnosis" class="btn btn-primary">無料衛生診断を申し込む <span class="arrow">→</span></a>
+      <a href="#contact" class="btn btn-outline">資料請求・商談予約 <span class="arrow">→</span></a>
+    </div>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</section>
+
+<!-- ============ ② 衛生の盲点 ============ -->
+<section class="blindspots">
+  <div class="container">
+    <div class="eyebrow">BLIND SPOT</div>
+    <h2 class="sec-title">そのこだわりは、<span class="em">本当にお客様の口元まで届いていますか。</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+    <p class="blindspot-quote">
+      施術ベッドのリネン、タオルの清潔感、空間の香り、丁寧な清掃。<br>
+      お客様の身体に触れるものには、細やかな気配りを徹底している。<br>
+      ──それが、選ばれる施設の常識です。
+    </p>
+
+    <div class="care-grid">
+      <div class="care-item">
+        <div class="num">01</div>
+        <h4>施術ベッド</h4>
+      </div>
+      <div class="care-item">
+        <div class="num">02</div>
+        <h4>タオル</h4>
+      </div>
+      <div class="care-item">
+        <div class="num">03</div>
+        <h4>空間</h4>
+      </div>
+      <div class="care-item">
+        <div class="num">04</div>
+        <h4>アロマ</h4>
+      </div>
+      <div class="care-item">
+        <div class="num">05</div>
+        <h4>清掃</h4>
+      </div>
+    </div>
+
+    <div class="vs-arrow"></div>
+
+    <h3 class="blindspot-question">
+      <span class="small">しかし、ふと立ち止まって考えてみてください。</span>
+      お客様が<span class="em">口にする水</span>の衛生管理は、<br>
+      どこまで行き届いているでしょうか。
+    </h3>
+  </div>
+</section>
+
+<!-- ============ ③ 業界の実態 ============ -->
+<section class="reality">
+  <div class="container">
+    <div class="eyebrow">INDUSTRY REALITY</div>
+    <h2 class="sec-title">語られてこなかった、<span class="water">ウォーターサーバーの真実。</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+    <p class="reality-intro">
+      一般的なウォーターサーバーは、設置されたその瞬間から、年月とともに「内側」の状態が変化していきます。<br>
+      しかし、その内側に目が向けられる機会は、驚くほど少ないのが実情です。
+    </p>
+
+    <div class="reality-grid">
+      <div class="reality-card">
+        <div class="label">REALITY 01</div>
+        <h3>本体は、長年そのまま。</h3>
+        <p>サーバーが設置されてから一度も本体交換が行われないまま、数年単位で運用されているケースが多くあります。お客様の目に映る外側は綺麗でも、内側は経年とともに変化しているのです。</p>
+      </div>
+      <div class="reality-card">
+        <div class="label">REALITY 02</div>
+        <h3>内部クリーニングが、無い。</h3>
+        <p>給水経路や貯水部の内部洗浄が、運用フローに組み込まれていないことが少なくありません。「外側を拭く」ことと「内側を清潔に保つ」ことは、本来まったく別の話です。</p>
+      </div>
+      <div class="reality-card">
+        <div class="label">REALITY 03</div>
+        <h3>衛生管理の責任の所在が、曖昧。</h3>
+        <p>サーバー本体は提供事業者のもの、運用は施設側──。その境界線で「誰が、いつ、どこまで管理するのか」が曖昧なまま、年月だけが流れていく構造になっています。</p>
+      </div>
+    </div>
+
+    <div class="reality-callout">
+      <div class="label">— THE TRUTH —</div>
+      <p>
+        ウォーターサーバーの本質的な価値は、<br>
+        「水を出すこと」ではなく、<br>
+        <span class="em">「いつ口に運んでも、安心であり続けること」</span>です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ④ なぜ衛生管理が重要なのか ============ -->
+<section class="why-hygiene">
+  <div class="container">
+    <div class="eyebrow">WHY HYGIENE</div>
+    <h2 class="sec-title">水まで気を配れる施設が、<span class="em">本当に選ばれる施設になる。</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+    <p class="lead">
+      お客様は、施術技術や空間の演出だけで施設を選んでいるのではありません。<br>
+      「ここなら、すべてに気を配ってくれている」という安心感の総量で、次の来店を決めています。
+    </p>
+
+    <div class="why-flow">
+      <div class="why-step">
+        <div class="step-num">01<small>FACILITY BRAND</small></div>
+        <div>
+          <h4>施設ブランドは、「見えない部分」で決まる。</h4>
+          <p>清掃の徹底、備品の質、香りの一貫性。お客様に直接見えない部分への配慮が、ブランドの格を形づくります。水の衛生管理は、そのなかでも最も語られてこなかった、最後の聖域です。</p>
+        </div>
+      </div>
+      <div class="why-step">
+        <div class="step-num">02<small>TRUST</small></div>
+        <div>
+          <h4>安心感は、信頼の前提条件。</h4>
+          <p>身体を委ねる施設だからこそ、お客様は「安心して過ごせるかどうか」を、無意識のうちに評価しています。提供される一杯の水まで丁寧に管理されているという事実は、その評価を静かに、しかし確実に押し上げます。</p>
+        </div>
+      </div>
+      <div class="why-step">
+        <div class="step-num">03<small>SATISFACTION</small></div>
+        <div>
+          <h4>顧客満足は、「想定を超える配慮」から生まれる。</h4>
+          <p>「ここまでやってくれているのか」という体験は、お客様の記憶に残ります。期待されていない領域での丁寧さは、満足度を底上げし、価格競争から抜け出すための確かな足場になります。</p>
+        </div>
+      </div>
+      <div class="why-step">
+        <div class="step-num">04<small>WORD OF MOUTH</small></div>
+        <div>
+          <h4>口コミは、語れる事実が増えるほど強くなる。</h4>
+          <p>「水まで第三者機関の推奨品を使っているらしい」。その一文が、レビューに、紹介に、SNSに乗っていく。語るに値する具体性こそが、紹介の連鎖を生むエンジンになります。</p>
+        </div>
+      </div>
+      <div class="why-step">
+        <div class="step-num">05<small>STAFF VOICE</small></div>
+        <div>
+          <h4>スタッフが、誇りを持って説明できる。</h4>
+          <p>「うちの水は、定期的にクリーニングと本体交換を行っています」。スタッフが胸を張って語れる材料は、接客の質を底上げし、施設全体の自信に変わります。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-summary">
+      <p>
+        健康の前に、衛生を。<br>
+        衛生の前に、想いやりを。<br>
+        ──お客様の口に入るものだからこそ、見えない部分まで清潔に保つ。<br>
+        それが「からだ想い」の出発点です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑤ からだ想いの特徴 ============ -->
+<section class="feature">
+  <div class="container">
+    <div class="eyebrow">OUR SERVICE</div>
+    <h2 class="sec-title">「からだ想い」が、<span class="water">提供しているもの。</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+    <p class="lead">
+      私たちが提供しているのは、ウォーターサーバーという「機械」ではありません。<br>
+      水利用設備に責任を持つ事業者として、衛生管理そのものを継続的にお届けするサービスです。
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">01</div>
+        <h3>定期的な本体交換</h3>
+        <div class="sub">REGULAR REPLACEMENT</div>
+        <p>「ずっと同じ本体を使い続ける」運用ではなく、計画的な本体交換を前提とした設計思想。年月の経過に対して、運用側で対策が施されている構造です。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">02</div>
+        <h3>定期内部クリーニング</h3>
+        <div class="sub">INNER CLEANING</div>
+        <p>外観のメンテナンスにとどまらず、給水経路を含めた内部の衛生管理を実施。普段は見えない部分への作業を、サービスとしてあらかじめ組み込んでいます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">03</div>
+        <h3>衛生管理の体制化</h3>
+        <div class="sub">MANAGEMENT SYSTEM</div>
+        <p>「誰が、いつ、何をするのか」を施設様任せにせず、私たちが衛生管理の体制を担保します。施設様は、ご来店のお客様に集中していただけます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">04</div>
+        <h3>水利協推奨品 CS100</h3>
+        <div class="sub">CERTIFIED MODEL</div>
+        <p>提供する本体「からだ想い CS100」は、公益社団法人 全国水利用設備環境衛生協会の推奨品。設備としての衛生性・安全性が第三者によって評価された製品です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑥ 水利協推奨品である理由 ============ -->
+<section class="authority">
+  <div class="container">
+    <div class="eyebrow">AUTHORITY</div>
+    <h2 class="sec-title">私たちの「想い」を、<span class="water">第三者が裏付けています。</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+    <p class="lead">
+      自社で「衛生的です」と語るのは、誰にでもできます。<br>
+      「からだ想い CS100」は、業界における第三者機関の評価を通過した、推奨品としての認定を受けています。
+    </p>
+
+    <div class="auth-hero">
+      <div class="auth-seal">
+        <div class="top">公益社団法人</div>
+        <div class="main">水利協<br>推奨品</div>
+        <div class="sub">RECOMMENDED</div>
+        <div class="org">全国水利用設備<br>環境衛生協会</div>
+      </div>
+      <div class="auth-text">
+        <h3><span class="em">「からだ想い CS100」</span>は、<br>水利協の推奨品として認定されています。</h3>
+        <p>水利協（公益社団法人 全国水利用設備環境衛生協会）の推奨品とは、性能・保守・維持管理・安全性・衛生性などを総合的に評価したうえで、経済的かつ衛生的な水利用設備として認められた製品に与えられる認定です。商談の場で「第三者が認めた水利用設備です」と一言添えられる──それが、推奨品である意味です。</p>
+      </div>
+    </div>
+
+    <div class="eval-grid">
+      <div class="eval-item">
+        <div class="label">EVAL 01</div>
+        <h5>性能</h5>
+      </div>
+      <div class="eval-item">
+        <div class="label">EVAL 02</div>
+        <h5>保守</h5>
+      </div>
+      <div class="eval-item">
+        <div class="label">EVAL 03</div>
+        <h5>維持管理</h5>
+      </div>
+      <div class="eval-item">
+        <div class="label">EVAL 04</div>
+        <h5>安全性</h5>
+      </div>
+      <div class="eval-item">
+        <div class="label">EVAL 05</div>
+        <h5>衛生性</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑦ 導入メリット ============ -->
+<section class="merits">
+  <div class="container">
+    <div class="eyebrow">MERITS</div>
+    <h2 class="sec-title">「からだ想い」が、<span class="em">施設にもたらすもの。</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+    <p class="lead">
+      水の衛生管理は、コストではありません。<br>
+      ブランド価値、リピート率、口コミ評価へとつながる、確かな投資です。
+    </p>
+
+    <div class="merits-grid">
+      <div class="merit-card">
+        <div class="num">01</div>
+        <h4>顧客満足度の底上げ</h4>
+        <p>「ここまで気を配ってくれているのか」という体験が、満足度の総量を引き上げます。施術・接客・空間という三本柱に、第四の柱として加わります。</p>
+      </div>
+      <div class="merit-card">
+        <div class="num">02</div>
+        <h4>安心感の可視化</h4>
+        <p>第三者機関の推奨品という事実は、語られた瞬間にお客様の納得感に変わります。「なんとなく安心」を「きちんと安心」に変えるサインです。</p>
+      </div>
+      <div class="merit-card">
+        <div class="num">03</div>
+        <h4>ブランド価値の上積み</h4>
+        <p>細部にこだわる施設としての一貫性が強化されます。価格ではなく価値で語れる施設へと、ポジショニングを底上げします。</p>
+      </div>
+      <div class="merit-card">
+        <div class="num">04</div>
+        <h4>価格競争からの離脱</h4>
+        <p>「安いから選ばれる」ではなく「気が利くから選ばれる」へ。値引きに頼らない集客の足場を、設備のレベルで整えます。</p>
+      </div>
+      <div class="merit-card">
+        <div class="num">05</div>
+        <h4>口コミに乗る具体性</h4>
+        <p>「水まで衛生管理されている施設」という、語れる事実が増えます。レビュー・紹介・SNSに乗りやすい、明確な差別化ポイントとなります。</p>
+      </div>
+      <div class="merit-card">
+        <div class="num">06</div>
+        <h4>スタッフの説明価値</h4>
+        <p>スタッフが胸を張って説明できる素材は、現場の自信に直結します。接客の質と、スタッフの定着率にも好影響を与えます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑧ 無料衛生診断 (Mid CTA) ============ -->
+<section class="diagnosis" id="diagnosis">
+  <div class="container">
+    <div class="diag-box">
+      <div class="label">FREE HYGIENE DIAGNOSIS</div>
+      <h2>まずは、貴施設の衛生管理レベルを、<br><span class="water">無料で診断いたします。</span></h2>
+      <p class="body">
+        現在ご利用中のウォーターサーバーや水回り設備について、衛生管理の観点から無料診断を実施。<br>
+        診断結果をもとに、貴施設に最適な改善提案までを、専任担当者がご案内いたします。
+      </p>
+      <ul class="diag-checklist">
+        <li>現状のサーバーの運用状態をチェック</li>
+        <li>本体交換・クリーニング状況を確認</li>
+        <li>施設規模に合わせた改善案をご提示</li>
+        <li>導入時の費用シミュレーションをご提案</li>
+        <li>勧誘・契約強要は一切ございません</li>
+        <li>所要時間：30分〜（オンライン可）</li>
+      </ul>
+      <a href="#contact" class="diag-cta">
+        無料衛生診断を申し込む <span style="font-family:var(--display);font-size:18px;">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑨ 導入事例 ============ -->
+<section class="cases">
+  <div class="container">
+    <div class="eyebrow">CASE STUDIES</div>
+    <h2 class="sec-title">一流の場が選んだ、<span class="water">導入実績。</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+    <p class="lead">
+      日本を代表するリゾートホテル・名門ゴルフクラブが、「からだ想い」を選んでいます。<br>
+      最も目利きの厳しい現場で選ばれているという事実が、衛生管理サービスとしての確かさを物語ります。
+    </p>
+
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="industry" style="font-family:var(--display);color:var(--water-d);font-size:10px;letter-spacing:0.3em;font-weight:500;margin-bottom:12px;">RESORT HOTEL</div>
+        <h3 style="font-family:var(--serif-jp);font-size:22px;font-weight:500;color:var(--ink);letter-spacing:0.06em;margin-bottom:14px;">川奈ホテル</h3>
+        <p class="voice" style="min-height:auto;font-size:14.5px;font-weight:300;line-height:2;color:#3c4a63;letter-spacing:0.02em;">富士箱根伊豆国立公園に佇む、日本屈指のクラシックリゾート。<strong style="color:var(--ink);font-weight:600;">男女浴室にご導入</strong>いただいています。</p>
+        <div class="change">
+          <strong>選ばれた理由：</strong> 入浴後の一杯まで、ゲストのご満足度に直結する。最高峰の体験を提供する場として、水利協推奨品としての衛生管理体制を高くご評価いただきました。
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="industry" style="font-family:var(--display);color:var(--water-d);font-size:10px;letter-spacing:0.3em;font-weight:500;margin-bottom:12px;">CITY HOTEL</div>
+        <h3 style="font-family:var(--serif-jp);font-size:22px;font-weight:500;color:var(--ink);letter-spacing:0.06em;margin-bottom:14px;">ホテルオークラ神戸</h3>
+        <p class="voice" style="min-height:auto;font-size:14.5px;font-weight:300;line-height:2;color:#3c4a63;letter-spacing:0.02em;">世界に名だたるオークラブランドの神戸拠点。<strong style="color:var(--ink);font-weight:600;">ヘルスクラブにご採用</strong>いただいています。</p>
+        <div class="change">
+          <strong>選ばれた理由：</strong> エクササイズ後の水分補給は、滞在体験の質を左右する重要な接点。会員様にお出しする水だからこそ、第三者機関に認められた衛生管理が必要とされました。
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="industry" style="font-family:var(--display);color:var(--water-d);font-size:10px;letter-spacing:0.3em;font-weight:500;margin-bottom:12px;">GOLF CLUB</div>
+        <h3 style="font-family:var(--serif-jp);font-size:22px;font-weight:500;color:var(--ink);letter-spacing:0.06em;margin-bottom:14px;">瀬田ゴルフクラブ</h3>
+        <p class="voice" style="min-height:auto;font-size:14.5px;font-weight:300;line-height:2;color:#3c4a63;letter-spacing:0.02em;">関西を代表する名門ゴルフコース。<strong style="color:var(--ink);font-weight:600;">男女浴室にお選び</strong>いただいています。</p>
+        <div class="change">
+          <strong>選ばれた理由：</strong> プレー後の入浴から、お帰りの一杯まで。会員様・ご来場ゲスト様の信頼を裏切らない水利用設備として、衛生管理の継続性を重視してご採用いただきました。
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="industry" style="font-family:var(--display);color:var(--water-d);font-size:10px;letter-spacing:0.3em;font-weight:500;margin-bottom:12px;">RESORT HOTEL</div>
+        <h3 style="font-family:var(--serif-jp);font-size:22px;font-weight:500;color:var(--ink);letter-spacing:0.06em;margin-bottom:14px;">大磯プリンスホテル</h3>
+        <p class="voice" style="min-height:auto;font-size:14.5px;font-weight:300;line-height:2;color:#3c4a63;letter-spacing:0.02em;">湘南エリアを象徴するシーサイドリゾート。<strong style="color:var(--ink);font-weight:600;">プールサイド特別室にご導入</strong>いただいています。</p>
+        <div class="change">
+          <strong>選ばれた理由：</strong> 大切なゲストをお迎えする特別な空間に置く水だからこそ、見えない部分まで管理されていること。「館の格」を支える水利用設備として、長くご活用いただいています。
+        </div>
+      </div>
+    </div>
+    <p class="case-note">※ 上記は「からだ想い」の代表的な導入施設例です。ホテル・ゴルフクラブ・リゾート施設をはじめ、リラクゼーション領域でも導入が広がっています。</p>
+  </div>
+</section>
+
+<!-- ============ ⑩ FAQ ============ -->
+<section class="faq">
+  <div class="container">
+    <div class="eyebrow">FAQ</div>
+    <h2 class="sec-title">よくいただく<span class="em">ご質問</span></h2>
+    <div class="divider"><div class="drop"></div></div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">導入にあたって、初期費用や月額はどのくらいかかりますか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">月額制のシンプルな料金プランをご用意しております。施設の規模や利用想定数によって最適なプランが異なるため、まずは無料衛生診断時に、現状ヒアリングのうえお見積もりをご提示いたします。「想像より続けやすかった」というお声を多くいただいています。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">設置工事は必要ですか？営業に支障は出ませんか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">水道直結型のため、設置時に簡易な接続工事が発生しますが、施設様の営業時間外や定休日に合わせて短時間で完了するよう調整いたします。設置場所のご相談、レイアウト確認も事前打ち合わせで丁寧にすり合わせいたしますので、ご安心ください。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">本体交換やクリーニングは、どのくらいの頻度で行われますか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">「からだ想い」のサービスには、計画的な本体交換と定期的な内部クリーニングがあらかじめ組み込まれています。「忘れたころに不安になる」ことのないよう、私たちが計画的にスケジュール管理いたします。具体的な頻度・タイミングは商談時に詳しくご案内いたします。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">メンテナンスや故障時の対応は、誰が行いますか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">設置から定期メンテナンス、万一の不具合対応までを当社が一括で担当いたします。施設様側で人員を割いていただく必要はございません。お客様への接客に集中していただける体制を整えています。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">他社のウォーターサーバーから乗り換えることはできますか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">はい、可能です。現在ご契約中のサービスとの兼ね合いも、無料衛生診断の際に整理してご提案いたします。「いつから切り替えれば営業に支障が出ないか」というご相談にも、これまでの経験を踏まえてご案内いたします。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">小規模な店舗でも導入できますか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">サロン、ヘッドスパ専門店、整体院など、客席数の限られた小規模施設様にも多くご導入いただいています。「来店客数は多くないが、一人ひとりに丁寧に向き合いたい」という施設様にこそ、衛生管理サービスとしての価値を実感いただいています。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">無料衛生診断は、本当に費用がかからないのですか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">はい、完全無料です。診断結果のご提示、改善提案までを費用負担なしでご案内しております。診断後の導入はご検討いただく形ですので、「話を聞いて判断したい」段階でお気軽にお申し付けください。強引な勧誘は一切いたしません。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="mark">Q.</span>
+          <span class="text">商談から導入までは、どのくらいの期間が必要ですか？</span>
+          <span class="toggle"></span>
+        </div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <span class="mark">A.</span>
+            <span class="text">お問い合わせから無料衛生診断、ご提案、ご契約、設置までを、おおむね2〜4週間程度でご案内可能です。施設様のご開業日やリニューアル時期に合わせたスケジュール調整もご相談いただけます。</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑪ FINAL CTA ============ -->
+<section class="final-cta" id="contact">
+  <div class="container final-cta-inner">
+    <div class="final-eyebrow">— ACTION —</div>
+    <h2 class="final-title">
+      お客様の安心は、<br>
+      <span class="water">見えない衛生管理</span>から。
+    </h2>
+    <p class="final-body">
+      「水まで気を配れる施設」という、唯一無二の信頼を。<br>
+      まずはお気軽に、無料衛生診断・資料請求・商談予約をご利用ください。<br>
+      ご相談から導入後まで、専任担当者が丁寧に伴走いたします。
+    </p>
+    <div class="final-buttons">
+      <a href="#contact-form" class="btn btn-primary">無料衛生診断を申し込む <span class="arrow">→</span></a>
+      <a href="#contact-form" class="btn btn-outline">資料請求・商談予約 <span class="arrow">→</span></a>
+    </div>
+    <div class="final-tel-block">
+      <div class="lbl">CONTACT</div>
+      <div class="num" style="font-size:22px;letter-spacing:0.08em;font-family:var(--serif-jp);">株式会社AZZURRO</div>
+      <div class="note">受付時間 平日 9:00 – 18:00 ／ 〒701-0204 岡山県岡山市南区大福477-1</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPANY ============ -->
+<section class="company">
+  <div class="container">
+    <div class="eyebrow">COMPANY</div>
+    <h2 class="sec-title">運営会社</h2>
+    <div class="divider"><div class="drop"></div></div>
+    <dl class="company-grid">
+      <div class="company-row"><dt>会社名</dt><dd>株式会社AZZURRO（アズーロ）</dd></div>
+      <div class="company-row"><dt>事業内容</dt><dd>ウォーターサーバー・ウォーターディスペンサーのレンタル</dd></div>
+      <div class="company-row"><dt>所在地</dt><dd>〒701-0204 岡山県岡山市南区大福477-1</dd></div>
+      <div class="company-row"><dt>加盟団体</dt><dd>公益社団法人 全国水利用設備環境衛生協会</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="brand">からだ想い</div>
+    <div class="tag">HYGIENE MANAGEMENT SERVICE</div>
+    <div class="copy">© AZZURRO Co., Ltd. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING CTA ============ -->
+<div class="floating-cta">
+  <a href="#contact">無料衛生診断を申し込む →</a>
+</div>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.closest('.faq-item').classList.toggle('is-open');
+    });
+  });
+  // open first FAQ by default
+  const first = document.querySelector('.faq-item');
+  if (first) first.classList.add('is-open');
+</script>
+
+</body>
+</html>
